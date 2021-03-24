@@ -1,0 +1,26 @@
+/*
+ * Avatar Tweaks
+ */
+
+// Chat avatars
+.avatar-3uk_u9 > .wrapper-3t9DeA > svg > foreignObject,
+// User info avatar
+.avatarWrapper-2yR4wp > div > svg > foreignObject {
+    mask: none;
+}
+
+// Chat avatars
+.avatar-3uk_u9 {
+    border-radius: 0;
+    border: var(--border);
+}
+
+// User info avatar
+.avatarWrapper-2yR4wp {
+    border-radius: 0;
+}
+
+// Member list status indicators
+.avatar-3uk_u9 > div > svg > rect {
+    display: none;
+}

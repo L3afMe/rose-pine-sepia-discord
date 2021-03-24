@@ -1,0 +1,31 @@
+@use 'tweaks/avatar';
+@use 'tweaks/channels';
+// @use 'tweaks/dm';
+// @use 'tweaks/guild';
+// @use 'tweaks/misc';
+
+* {
+    /*
+     * Builtin Variables
+     */
+    --background-primary: var(--base) !important;
+    --deprecated-store-bg: var(--base) !important;
+    --background-secondary: var(--base) !important;
+    --background-secondary-alt: var(--base) !important;
+    --background-tertiary: var(--base) !important;
+    --background-floating: var(--overlay) !important;
+    --background-mentioned: var(--overlay) !important;
+
+    --text-muted: var(--subtle) !important;
+    --text-normal: var(--text) !important;
+    --text-link: var(--rose) !important;
+    --interactive-active: var(--text) !important;
+    --interactive-hover: var(--text) !important;
+    --channeltextarea-background: var(--overlay) !important;
+    --channels-default: var(--iris) !important;
+    --interactive-normal: var(--iris) !important;
+
+    --header-primary: var(--text) !important;
+
+    --elevation-low: none !important;
+}

@@ -1,0 +1,133 @@
+/*
+ * Channel and DM List tweaks
+ */
+
+//// Add side borders
+// Channel
+#channels,
+// DM
+#private-channels {
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+//// Make channels fill height to fix borders
+#private-channels {
+    height: 100%;
+}
+
+//// Remove padding and margin from items
+// Channel
+.wrapper-2jXpOf,
+// DM
+.channel-2QD9_O {
+    margin: 0;
+    padding: 0;
+}
+
+// Remove DM search bar
+.searchBar-6Kv8R2 > .searchBarComponent-32dTOx,
+// Remove channel indicator dots
+.unread-2lAfLh {
+    display: none;
+}
+
+// Remove create DM button
+.privateChannelRecipientsInviteButtonIcon-3A3uTc {
+    display: none;
+}
+
+// Remove friend request indicator
+#private-channels-0 > div > div.children-gzQq2t > div {
+    display: none;
+}
+
+// Fix DM list scroller margin
+.channel-2QD9_O {
+    max-width: initial;
+}
+
+// Fix channel margin from removing indicators
+.content-1x5b-n { margin-left: 0; }
+.iconContainer-1BBaeJ { margin-left: 6px; }
+
+//// Remove border radius
+// Channel
+.content-1x5b-n,
+// DM 
+.layout-2DM8Md {
+    border-radius: 0;
+}
+
+//// User info
+// Hide tag
+.nameTag-3uD-yy.canCopy-2VBT7N {
+    display: none;
+}
+
+// Shrink height
+.container-3baos1 {
+    height: 32px;
+    padding: 0;
+    margin-bottom: 0;
+    border: var(--border);
+    border-bottom: none;
+
+    // Move button to right
+    .flex-1xMQg5 {
+        width: 100%;
+        justify-content: flex-end;
+        overflow: hidden;
+        margin-left: 8px;
+
+        // Remove button radius
+        .button-14-BFJ {
+            border-radius: 0;
+        }
+
+        // Color buttons
+        .button-14-BFJ:hover {
+            background-color: var(--overlay);
+        }
+    }
+}
+
+
+//// Hover/selected background color
+// Channel
+.selected-aXhQR6 .layout-2DM8Md,
+.wrapper-2jXpOf:hover .content-1x5b-n,
+// DM
+.modeSelected-346R90 .content-1x5b-n,
+.clickable-1JJAn8:hover .layout-2DM8Md {
+    background-color: var(--overlay);
+}
+
+////// Shrink on hover
+//// Shrink sidebar
+.sidebar-2K8pFh {
+    width: 56px;
+    transition: width .2s ease-in-out;
+    transition-delay: 1s;
+}
+
+// Grow on hover
+.sidebar-2K8pFh:hover {
+    width: 244px;
+}
+
+// Hide headers
+.containerDefault-3tr_sE,
+.headerText-2F0828 {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    transition-delay: 1s;
+}
+
+// Show on grow
+.sidebar-2K8pFh:hover > .container-3w7J-x > div > .content-3YMskv
+    > .containerDefault-3tr_sE,
+.sidebar-2K8pFh:hover > .privateChannels-1nO12o > div > .content-3YMskv
+    > .privateChannelsHeaderContainer-3NB1K1 > .headerText-2F0828{
+    opacity: 1;
+}

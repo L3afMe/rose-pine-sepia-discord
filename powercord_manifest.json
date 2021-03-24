@@ -1,9 +1,9 @@
 {
   "name": "Rose Pine Sepia",
-  "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist",
+  "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist with a sepia twist",
   "version": "0.0.1",
   "license": "MIT",
-  "theme": "index.css",
+  "theme": "index.scss",
   "author": "L3af#0444",
   "preview": [],
   "discord": "EkpEQWE5Kj"
